@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    color: rgb(17, 180, 88);
+    color: rgb(45, 160, 112);
     text-decoration: none;
 }
 
@@ -107,6 +107,17 @@ nav li:hover {
 /* BANNER */
 
 .banner {
+    background: #ffffffbd;
+    background-blend-mode: color-burn;
+    background-image: url(../img/biblioteca-fachada.jpg);
+    min-height: 100px;
+    max-height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .banner h4, .banner p {
@@ -140,6 +151,13 @@ nav li:hover {
 .home-search {
     display: flex;
     flex-direction: column;
+}
+
+#buton-search {
+    background: linear-gradient(#2da070, #2da070);
+    border: 2px solid #fff;
+    box-shadow: 0px 2px 2px #0000002e;
+    color: #fff;
 }
 
 .home-search input {
