@@ -211,3 +211,48 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+/*Formulario*/
+
+.formulario form fieldset {
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    border: none;
+    box-shadow: 0 1px 1px #0005;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+}
+
+form label {
+    color: #888888;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    min-height: 40px;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    color: #2da070;
+    padding: 0 5px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #d8d8d8;
+}
+
+form button {
+    display: flex;
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #d8d8d8;
+    margin: 20px auto;
+    color: #909090;
+    text-transform: uppercase;
+}
