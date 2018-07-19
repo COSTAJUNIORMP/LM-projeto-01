@@ -6,6 +6,7 @@
     <title>Biblioteca Nilo Peçanha</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon">    
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/aux.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
@@ -29,7 +30,7 @@
                     <a href="index.html"><li>Home</li></a>
                     <a href="about.html"><li>Institucional</li></a>
                     <a href="service.html"><li>Serviços</li></a>
-                    <a href="contact.html"><li>Contato</li></a>
+                    <a href="#"><li>Contato</li></a>
                 </ul>
             </nav>
         </div>
@@ -40,56 +41,35 @@
     <div>
         <div class="guia-navegacao">
             <i class="fas fa-map-marker-alt"></i>
-            Home
+            Home >> Contato
         </div>
     </div>
     <!-- FIM DO GUIA DE NAVEGAÇÃO -->
 
-    <!-- INICIO DO BANNER -->
-    <div>
-        <div class="banner">
-            <div>
-                <h4>Horário de Funcionamento</h4>
-                <p>
-                    Segunda à Sexta
-                    07:00 as 22:00
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- FIM DO BANNER -->
-
-    <!-- INICIO DO CAMPO PESQUISA -->
-    <div class="pesquisa-simples">
-        <div class="simple-advanced">
-            <input type="radio" name="search" value="simples" id="simples">
-            <label for="simples">Pesquisa Simples</label>
-            <input type="radio" name="search" value="avancada" id="avancado">
-            <label for="avancado">Pesquisa Avançada</label>
-        </div>
-        <div class="home-search">
-            <input type="text" name="pesquisa" placeholder="Pesquise em nosso acervo!">
-            <a href="search.html"><input id="buton-search" type="submit" value="Pesquisar"></a>
-        </div>
-    </div>
-    <!-- FIM DO CAMPO PESQUISA -->
-
     <!-- INICIO DO CAMPO NOTÍCIAS -->
-    <div class="home-noticias">
-        <h1>Notícias</h1>
-        <div></div>
-        <div class="noticia">
-            <h3>Normas da Biblioteca Nilo Peçanha</h3>
-            <h5>12 de junho de 2018 - 23:45:00</h5>
-            <p>Para que a Biblioteca possa cumprir com sua função social e servir igualmente a todos, é necessário que o usuário observe as normas de utilização dos seus serviços, incluindo o respeito ao silêncio, o zelo pelos livros e o cumprimento dos prazos de empréstimos.</p>
-            <p><b>Assunto:</b> <a href="#">Norma</a>. <a href="#">Biblioteca</a>. <a href="#">Usuário</a>.</p>
-        </div>
-        <div class="noticia">
-            <h3>Título da notícia</h3>
-            <h5>12 de junho de 2018 - 23:45:00</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint alias nihil laboriosam voluptatem quidem amet qui? Expedita architecto, rerum at natus nostrum dolor soluta voluptate officiis commodi dicta et unde.</p>
-            <p><b>Assunto:</b> <a href="#">Tag1</a>. <a href="#">Tag2</a>. <a href="#">Tag3</a>.</p>
-        </div>
+    <div class="formulario">
+        <form>
+            <fieldset>
+                <h2 style="text-align: center;">Entre em contato</h2>
+                <div class="form-name">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-email">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" required>
+                </div>
+                <div>
+                    <label for="message">Texto</label required>
+                    <textarea name="message" id="message" rows="4"></textarea> 
+                </div>
+                <button>Enviar</button>
+            </fieldset>
+        </form>
     </div>
     <!-- FIM DO CAMPO NOTÍCIAS -->
 
@@ -115,6 +95,5 @@
         </div>
     </footer>
     <!-- FIM DO FOOTER -->
-
 </body>
 </html>
