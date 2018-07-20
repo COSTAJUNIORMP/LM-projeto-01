@@ -20,8 +20,6 @@
                 </a>
             </div>
         </header>
-        <!-- FIM DO HEADER -->
-    
         <!-- INICIO DO MENU -->
         <div class="barra-superior">
             <nav>
@@ -32,8 +30,8 @@
                     <a href="contact.html"><li>Contato</li></a>
                 </ul>
             </nav>
+            <div style="padding-top: 10px;">Horario de funcionamento: 7h às 18h</div>
         </div>
-        <!-- FIM DO MENU -->
     </div>
 
     <!-- INICIO DO GUIA DE NAVEGAÇÃO -->
@@ -45,50 +43,40 @@
     </div>
     <!-- FIM DO GUIA DE NAVEGAÇÃO -->
 
-    <!-- INICIO DO BANNER -->
-    <div>
-        <div class="banner">
-            <div>
-                <h4>Horário de Funcionamento</h4>
-                <p>
-                    Segunda à Sexta
-                    07:00 as 22:00
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- FIM DO BANNER -->
-
     <!-- INICIO DO CAMPO PESQUISA -->
     <div class="pesquisa-simples">
-        <div class="simple-advanced">
-            <input type="radio" name="search" value="simples" id="simples">
-            <label for="simples">Pesquisa Simples</label>
-            <input type="radio" name="search" value="avancada" id="avancado">
-            <label for="avancado">Pesquisa Avançada</label>
-        </div>
-        <div class="home-search">
+        <h2>O que você procura?</h2>
+        <div class="home-search">            
+            <div style="grid-area: texto;color: #8e8e8e;">
+                <p>Utilize este campo para pesquisar em nosso acervo. Clique em avançado para mais opções de pesquisa.</p>
+            </div>
             <input type="text" name="pesquisa" placeholder="Pesquise em nosso acervo!">
-            <a href="search.html"><input id="buton-search" type="submit" value="Pesquisar"></a>
+            <a href="search.html">
+                <input id="buton-search" type="submit" value="Pesquisar">
+            </a>
+            <a href="search.html">
+                <input id="buton-advanced" type="submit" value="Avancado">
+            </a>
         </div>
     </div>
     <!-- FIM DO CAMPO PESQUISA -->
 
     <!-- INICIO DO CAMPO NOTÍCIAS -->
-    <div class="home-noticias">
-        <h1>Notícias</h1>
-        <div></div>
-        <div class="noticia">
-            <h3>Normas da Biblioteca Nilo Peçanha</h3>
-            <h5>12 de junho de 2018 - 23:45:00</h5>
-            <p>Para que a Biblioteca possa cumprir com sua função social e servir igualmente a todos, é necessário que o usuário observe as normas de utilização dos seus serviços, incluindo o respeito ao silêncio, o zelo pelos livros e o cumprimento dos prazos de empréstimos.</p>
-            <p><b>Assunto:</b> <a href="#">Norma</a>. <a href="#">Biblioteca</a>. <a href="#">Usuário</a>.</p>
-        </div>
-        <div class="noticia">
-            <h3>Título da notícia</h3>
-            <h5>12 de junho de 2018 - 23:45:00</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint alias nihil laboriosam voluptatem quidem amet qui? Expedita architecto, rerum at natus nostrum dolor soluta voluptate officiis commodi dicta et unde.</p>
-            <p><b>Assunto:</b> <a href="#">Tag1</a>. <a href="#">Tag2</a>. <a href="#">Tag3</a>.</p>
+    <div style="background: #fff;">
+        <div class="home-noticias">
+            <h1>Notícias</h1>
+            <div class="noticia">
+                <h3>Normas da Biblioteca Nilo Peçanha</h3>
+                <h5>12 de junho de 2018 - 23:45:00</h5>
+                <p>Para que a Biblioteca possa cumprir com sua função social e servir igualmente a todos, é necessário que o usuário observe as normas de utilização dos seus serviços, incluindo o respeito ao silêncio, o zelo pelos livros e o cumprimento dos prazos de empréstimos.</p>
+                <p><b>Assunto:</b> <a href="#">Norma</a>. <a href="#">Biblioteca</a>. <a href="#">Usuário</a>.</p>
+            </div>
+            <div class="noticia">
+                <h3>Projeto Bibliosolidários arrecada livros para doação</h3>
+                <h5>12 de junho de 2018 - 23:45:00</h5>
+                <p>O projeto Bibliosolidários está realizando uma campanha de arrecadação de livros infantis e infanto-juvenis para uma ação a ser realizada no dia 08 de outubro, as 17h no Espaço Cultural. No IFPB, as doações podem ser feitas na biblioteca Nilo Peçanha do Campus João Pessoa, até o dia 30 de setembro.</p>
+                <p><b>Assunto:</b> <a href="#">Livros</a>. <a href="#">Doação</a>. <a href="#">Bibliosolidários</a>.</p>
+            </div>
         </div>
     </div>
     <!-- FIM DO CAMPO NOTÍCIAS -->
