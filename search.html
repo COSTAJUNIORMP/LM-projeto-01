@@ -10,27 +10,28 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-        
-    <div class="cabecalho">
-        <!-- INICIO DO HEADER -->
-        <header>
-            <div class="titulo-biblioteca">
-                <a href="index.html">
-                    <img src="img/Untitled-1.png">
-                </a>
+    <div style="background: #fff;">    
+        <div class="cabecalho">
+            <!-- INICIO DO HEADER -->
+            <header>
+                <div class="titulo-biblioteca">
+                    <a href="index.html">
+                        <img src="img/Untitled-1.png">
+                    </a>
+                </div>
+            </header>
+            <!-- INICIO DO MENU -->
+            <div class="barra-superior">
+                <nav>
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="about.html"><li>Institucional</li></a>
+                        <a href="service.html"><li>Serviços</li></a>
+                        <a href="contact.html"><li>Contato</li></a>
+                    </ul>
+                </nav>
+                <div style="padding-top: 10px;">Horario de funcionamento: 7h às 18h</div>
             </div>
-        </header>
-        <!-- INICIO DO MENU -->
-        <div class="barra-superior">
-            <nav>
-                <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="about.html"><li>Institucional</li></a>
-                    <a href="service.html"><li>Serviços</li></a>
-                    <a href="contact.html"><li>Contato</li></a>
-                </ul>
-            </nav>
-            <div style="padding-top: 10px;">Horario de funcionamento: 7h às 18h</div>
         </div>
     </div>
 
@@ -45,55 +46,68 @@
 
     <!-- INICIO DO CAMPO PESQUISA -->
     <div>
-        <div class="pesquisa-avancada">
-            <h2>O que você procura?</h2>
-            <div class="advanced-search">            
-                <div style="color: #8e8e8e;">
-                    <p>Utilize este campo para pesquisar em nosso acervo. Clique em avançado para mais opções de pesquisa.</p>
-                </div>
-                <div>
-                    <select>
-                        <option>Autor</option>
-                        <option>Título</option>
-                        <option>Assunto</option>
-                        <option>Ano</option>
-                    </select>
-                    <input type="text" name="pesquisa">
-                    <select>
-                        <option>e</option>
-                        <option>ou</option>
-                    </select>
-                </div>
-                <div>
-                    <select>
-                        <option>Autor</option>
-                        <option>Título</option>
-                        <option>Assunto</option>
-                        <option>Ano</option>
-                    </select>
-                    <input type="text" name="pesquisa">
-                    <select>
-                        <option>e</option>
-                        <option>ou</option>
-                    </select>
-                </div>
-                <div>
-                    <select>
-                        <option>Autor</option>
-                        <option>Título</option>
-                        <option>Assunto</option>
-                        <option>Ano</option>
-                    </select>
-                    <input type="text" name="pesquisa">
-                    <select>
-                        <option>e</option>
-                        <option>ou</option>
-                    </select>
-                </div>
-                <input id="buton-search" type="submit" value="Pesquisar">
+        <div style="max-width: 960px;margin: 20px auto;padding: 10px;">
+            <div style="color: #8e8e8e;text-align: center;padding: 0 0 20px 0;">
+                <h2>Adicione mais informações à sua pesquisa!</h2>
+                <p>Utilize dentre os campos a seguir, aqueles que podem lhe ajudar a encontrar o que procura. Utilize mais de um campo se necessário!</p>
             </div>
+            <form class="advanced-search">
+                <div class="titulo">
+                    <label for="titulo">Título:</label>
+                    <input type="text" name="titulo" id="titulo">
+                </div>
+                <div class="autor">
+                    <label for="Autor">Autor:</label>
+                    <input type="text" name="autor" id="autor">
+                </div>
+                <div class="assunto">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" name="assunto" id="assunto">
+                </div>
+                <div class="local">
+                    <label for="local">Local de Publicação:</label>
+                    <input type="text" name="local" id="local">
+                </div>
+                <div class="editora">
+                    <label for="editora">Editora:</label>
+                    <input type="text" name="editora" id="editora">
+                </div>
+                <div class="ano">
+                    <label for="ano">Ano de Publicação:</label>
+                    <input type="text" name="ano" id="ano">
+                </div>
+                <div class="ate">
+                    <label for="ate">até:</label>
+                    <input type="text" name="ate" id="ate">
+                </div>
+                <div class="material">
+                    <label for="material">Tipo de Material:</label>
+                    <select name="material">
+                        <option value="01">Todos os tipos de materiais</option>
+                        <option value="02">Anais</option>
+                        <option value="03">Apostila</option>
+                        <option value="04">Artigo de Periódico</option>
+                        <option value="05">CD-ROM</option>
+                        <option value="06">Clipping</option>
+                        <option value="07">Coleção Especial</option>
+                        <option value="08">Curso</option>
+                        <option value="09">DVD</option>
+                        <option value="10">Evento</option>
+                        <option value="11">Folheto</option>
+                        <option value="12">Jornal</option>
+                        <option value="13">Livro</option>
+                        <option value="14">Monografia</option>
+                        <option value="15">Periódico Internacional</option>
+                        <option value="16">Periódico Nacional</option>
+                        <option value="17">Referência</option>
+                        <option value="18">Teses Diversas</option>
+                    </select>
+                </div>
+            </form>
+            <input type="submit" name="submit" value="Pesquisar" id="pesquisa-avancada">
         </div>
     </div>
+
     <!-- INICIO DO CAMPO DE LIVROS -->
     <div style="background: #fff">
         <div class="search-result-2">
@@ -154,7 +168,6 @@
         </div>
     </div>
 
-
     <!-- INICIO DO FOOTER -->
     <footer>
         <div class="rodape">
@@ -168,10 +181,16 @@
             </div>
             <div class="midias-sociais">
                 <a href="#">
-                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="#">
-                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
                 </a>
             </div>
         </div>
