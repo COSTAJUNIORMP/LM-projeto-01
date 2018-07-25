@@ -33,7 +33,9 @@ body, .cabecalho {
 /* HEADER */
 
 .cabecalho {
-    background: #fff;
+    /* background: #fff; */
+    max-width: 960px;
+    margin: auto;
 }
 
 .cabecalho img {
@@ -99,6 +101,12 @@ nav li:hover {
 }
 
 @media screen and (min-width: 770px) {
+    header {
+        justify-self: left;
+    }
+    .barra-superior {
+        justify-self: right;
+    }
     .cabecalho {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
@@ -239,10 +247,10 @@ footer {
 }
 
 .midias-sociais i {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: 3px solid;
-    border-radius: 50%;
+    border-radius: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,11 +306,10 @@ form label {
     margin-bottom: 5px;
 }
 
-form input, form textarea {
+form input, form textarea, select {
     min-height: 40px;
     background: none;
     outline: none;
-    font-size: 1rem;
     color: #2da070;
     padding: 0 5px;
     font-family: 'Montserrat', sans-serif;

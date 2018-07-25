@@ -131,3 +131,48 @@
     max-width: 220px;
     justify-content: center;
 }
+
+/* Pesquisa Avançada */
+
+.advanced-search {
+    max-width: 960px;
+    display: grid;
+    grid-template-areas: "titulo" "autor" "assunto" "ano" "ate" "local" "editora" "material";
+    grid-gap: .5rem;
+}
+
+#pesquisa-avancada {width: 200px;height: 40px;outline: none;background: #2da070;margin: 20px auto;display: flex;justify-content: center;border: none;color: #ffffff;text-transform: uppercase;border-radius: 5px;}
+
+@media screen and (min-width: 450px) {
+    .advanced-search {
+        grid-template-areas: 
+        "titulo titulo" 
+        "autor assunto" 
+        "ano ate" 
+        "local editora" 
+        "material material";
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .advanced-search {
+        grid-template-areas: 
+        "titulo titulo autor autor"
+        "assunto assunto ano ate" 
+        "local editora material material";
+    }
+}
+
+.advanced-search div {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {grid-area: titulo;}
+.autor {grid-area: autor;}
+.assunto {grid-area: assunto;}
+.local {grid-area: local;}
+.editora {grid-area: editora;}
+.ano {grid-area: ano;}
+.ate {grid-area: ate;}
+.material {grid-area: material;}
