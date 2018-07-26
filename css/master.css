@@ -256,6 +256,13 @@ footer {
     justify-content: center;
 }
 
+.copyright {
+    text-align: center;
+    background: #0d3e29;
+    color: #2da070;
+    font-size: .8rem;
+}
+
 @media screen and (min-width:770px) {
     .rodape {
         display: grid;

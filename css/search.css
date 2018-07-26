@@ -1,19 +1,32 @@
-/* Configurações gerais */
+/* ConfiguraÃ§Ãµes gerais */
 
 .search-result {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    margin-bottom: 10px;
+    max-width: 960px;
+    margin: 0 auto 10px auto;
+    grid-template-areas: "imagebook" "cdd" "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10";
 }
 
 .image-book {
-    text-align: center;
-    display: grid;
-    grid-template-areas: "img icon1" "img icon2" "img icon3";
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-book a {
-    grid-column: 3/4;
+    margin-top: 20px;
+    max-width: 222px;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #cecece;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.image-book i {
+    font-size: 1.5rem;
 }
 
 .CDD p {
@@ -24,39 +37,68 @@
 }
 
 .image-book img {
-    grid-column: 1 / 3;
-    width: 100%;
-    grid-area: img;
-}
-
-.image-book a {
-    display: flex;
-    margin: 20px auto;
-    font-size: 2rem;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
+    max-width: 242px;
+    border: 1px solid #2da070;
 }
 
 .image-book a:hover {
-    background: rgb(102, 102, 102);
+    background: rgb(45, 160, 112);
+    color: #fff;
 }
 
 .search-result div {
     background: #ffffff;
-    padding: 0 10px;
+    padding: 10px;
     margin: 10px;
     border-radius: 5px;
     margin-bottom: 0px;
-    box-shadow: 0px 1px 1px #00000040;
+    border: 1px solid #d8d8d8;
+    /* box-shadow: 0px 1px 1px #00000040; */
 }
 
 .search-result div:last-child {
-    margin-bottom: 10px;
 }
 
 .search-result h2 {
     font-size: 80%;
+}
+
+.image-book {grid-area: imagebook;}
+.CDD {grid-area: cdd;}
+.item1 {grid-area: item1;}
+.item2 {grid-area: item2;}
+.item3 {grid-area: item3;}
+.item4 {grid-area: item4;}
+.item5 {grid-area: item5;}
+.item6 {grid-area: item6;}
+.item7 {grid-area: item7;}
+.item8 {grid-area: item8;}
+
+@media screen and (min-width:600px) {
+    .search-result {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "imagebook cdd" 
+        "imagebook item1" 
+        "imagebook item2" 
+        "imagebook item3" 
+        "item4 item4"
+        "item5 item6"
+        "item7 item8"
+        "item9 item10"
+    }
+}
+
+@media screen and (min-width:900px) {
+    .search-result {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:
+        "imagebook cdd cdd item1" 
+        "imagebook item2 item2 item2" 
+        "imagebook item4 item4 item4" 
+        "imagebook item5 item3 item6" 
+        "item7 item8 item9 item10"
+    }
 }
 
 .registro-tipo {
@@ -67,7 +109,7 @@
     padding: 0;
 }
 
-/* pesquisa avançada */
+/* pesquisa avanÃ§ada */
 
 .pesquisa-avancada {
     max-width: 500px;
@@ -132,7 +174,7 @@
     justify-content: center;
 }
 
-/* Pesquisa Avançada */
+/* Pesquisa AvanÃ§ada */
 
 .advanced-search {
     max-width: 960px;
