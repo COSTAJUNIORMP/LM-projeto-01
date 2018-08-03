@@ -339,17 +339,31 @@ form button {
     display: grid;
     max-width: 960px;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     grid-gap: 1rem;
 }
 
+@media screen and (min-width:770px){
+
+    .contact {
+        display: grid;
+        max-width: 960px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        grid-gap: 1rem;
+    }
+
+    .maps {
+        padding: 10px;
+        background: #fff;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 1px #0000003d;
+    }
+}
+
 .maps iframe {
     width: 100%;
-    border: 0;
-    height: 490px;
-    margin-bottom: 20px;
-    padding: 10px;
+    height: 100%;
     background: #fff;
-    box-shadow: 1px 1px 1px #0000003d;
 }
