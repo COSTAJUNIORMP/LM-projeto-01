@@ -344,14 +344,15 @@ form button {
 }
 
 .maps {
-    padding: 10px;
+    padding: 20px;
     background: #fff;
     margin: 0px;
 }
 
 @media screen and (min-width: 550px) {
     .maps {
-        margin: 0 5%;
+        margin: 0 5% 20px 5%;
+        box-shadow: 0 1px 1px #0005;
     }
 }
 
@@ -367,8 +368,8 @@ form button {
     }
 
     .maps {
-        margin-bottom: 20px;
-        box-shadow: 0 1px 1px #0005;
+    margin-left: 0;
+    margin-right: 0;
     }
 }
 
@@ -376,5 +377,5 @@ form button {
     width: 100%;
     max-height: 100%;
     background: #fff;
-    height: 456px;
+    height: 436px;
 }
