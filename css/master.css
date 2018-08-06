@@ -20,6 +20,37 @@ a:hover {
     color: rgb(174, 221, 196);
 }
 
+/* Animação de inicialização do site */
+
+@keyframes show{
+    to{opacity:0;}
+    0%{opacity:1;}
+    99%{opacity: 1;}
+}
+
+@keyframes showimg {
+    to{opacity:0;}
+    25%{opacity:0;}
+    99%{opacity:1;}
+}
+
+.todatela img {
+    opacity: 0;
+    animation: showimg 4s linear infinite;
+}
+
+.todatela {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    opacity: 0;
+    animation: show 4s linear infinite;
+}
+
 /* Definido alguns displays */
 
 .titulo-biblioteca {
