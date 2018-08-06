@@ -145,19 +145,16 @@ nav li:hover {
 /* PESQUISA SIMPLES */
 
 @keyframes pesquisa {
-    from {opacity: 1; }
+    from {opacity: 1; width: 520px;height: 310px;}
     99% {width: 520px;height: 310px;}
     100% {opacity: 0;width: 0;height: 0;}
 }
 
 .hidden-search {
     position: absolute;
-    /*! z-index: 0; */
-    width: 520px;
-    height: 310px;
     background: #f5f5f5;
     opacity: 0;
-    animation: pesquisa 4s linear;
+    animation: pesquisa 3s linear;
 }
 
 .simple-advanced {
