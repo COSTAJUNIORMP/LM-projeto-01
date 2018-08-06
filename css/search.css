@@ -136,16 +136,6 @@
     justify-content: center;
 }
 
-@media screen and (min-width:900px) {
-    .hiden-buton {
-        display: flex;
-    }
-    
-    .butons-options {
-        display:none;
-    }
-}
-
 /* pesquisa avanÃ§ada */
 
 .pesquisa-avancada {
@@ -212,6 +202,16 @@
     background: #2da070;
     color: #fff;
     border-radius: 10px;
+}
+
+@media screen and (min-width:900px) {
+    .hiden-buton {
+        display: flex;
+    }
+    
+    .butons-options {
+        display:none;
+    }
 }
 
 /* Pesquisa AvanÃ§ada */
