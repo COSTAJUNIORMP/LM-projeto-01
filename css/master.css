@@ -36,7 +36,7 @@ a:hover {
 
 .todatela img {
     opacity: 0;
-    animation: showimg 4s linear infinite;
+    animation: showimg 4s linear;
 }
 
 .todatela {
@@ -48,7 +48,7 @@ a:hover {
     align-items: center;
     background: #fff;
     opacity: 0;
-    animation: show 4s linear infinite;
+    animation: show 4s linear;
 }
 
 /* Definido alguns displays */
