@@ -154,7 +154,7 @@ nav li:hover {
     position: absolute;
     background: #f5f5f5;
     opacity: 0;
-    animation: pesquisa 3s linear;
+    animation: pesquisa 2s linear;
 }
 
 .simple-advanced {
